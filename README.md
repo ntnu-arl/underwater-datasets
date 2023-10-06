@@ -13,7 +13,7 @@ Each of the trajectory contains following data:
 * Pressure sensor for depth
 * mavros rc/out (ch 1-8 thrusters, ch 9-10 for Lumen LED PWD Value)
 
-The collective data can be found [(1-18)](https://ntnu.box.com/s/xgsepbu96ty8ylzcz7sjyg6vvo3hciwe) and [(19-24)](https://ntnu.box.com/s/xgsepbu96ty8ylzcz7sjyg6vvo3hciwe), whereas the following table contains link to each trajectory:
+The collective data can be found [(1-18)](https://ntnu.box.com/s/xgsepbu96ty8ylzcz7sjyg6vvo3hciwe) and [(19-24)](https://ntnu.box.com/s/nrelktzxg6a2pa5p3kp0nnuyd0rpkicj), whereas the following table contains link to each trajectory:
 
 #### Motion Pattern 1 (Rectangular)
 | Trajectory | Illumination | Duration (s) | Size (Gb) | Link | 
