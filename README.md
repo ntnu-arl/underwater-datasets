@@ -28,12 +28,12 @@ The collective data can be found [(1-18)](https://ntnu.box.com/s/xgsepbu96ty8ylz
 #### Motion Pattern 2 (Hour Glass)
 | Trajectory | Illumination | Duration (s) | Size (Gb) | Link | 
 | --- | --- | --- | --- | --- |
-| 7 | E1+O3 | 460  | 18.1| [link](https://ntnu.box.com/s/2me1s6o4uqzfz3ai804t4sbwvmnzye91)
-| 8 | E1+O2 | 456 | 17.8| [link](https://ntnu.box.com/s/2njbkv6mgqzlrxw2vr1k9qkedggd5sdh)
-| 9 | E1+O1 | 392 | 15.3| [link](https://ntnu.box.com/s/3vofmpx83jn10jby7om44reapjbculme)
-| 10 | E1+O1 | 386 | 15.1| [link](https://ntnu.box.com/s/ow0yjer634yb6y2vibi0f6im6lr3hb2b)
-| 11 | E1+O2 | 443 | 17.3| [link](https://ntnu.box.com/s/2nu1q2t6i402j0vt6r9p1280071w0rtb)
-| 12 | E1+O3 | 395 | 15.4 | [link](https://ntnu.box.com/s/ybxfvueawqagv20huehqj08gtpxsprwk)
+| 7 | E1+O3 | 251  | 9.8| [link](https://ntnu.box.com/s/2me1s6o4uqzfz3ai804t4sbwvmnzye91)
+| 8 | E1+O2 | 252 | 9.8| [link](https://ntnu.box.com/s/2njbkv6mgqzlrxw2vr1k9qkedggd5sdh)
+| 9 | E1+O1 | 262 | 10.2| [link](https://ntnu.box.com/s/3vofmpx83jn10jby7om44reapjbculme)
+| 10 | E0+O1 | 281 | 11.0| [link](https://ntnu.box.com/s/ow0yjer634yb6y2vibi0f6im6lr3hb2b)
+| 11 | E0+O2 | 279 | 10.9| [link](https://ntnu.box.com/s/2nu1q2t6i402j0vt6r9p1280071w0rtb)
+| 12 | E0+O3 | 263 | 10.2 | [link](https://ntnu.box.com/s/ybxfvueawqagv20huehqj08gtpxsprwk)
 
 *Note: Two more motion patterns will be updates soon.*
 
@@ -57,7 +57,7 @@ The collective data can be found [(1-18)](https://ntnu.box.com/s/xgsepbu96ty8ylz
 | 5 | External+Level1 | 443 | 17.3| [link](https://ntnu.box.com/s/7a05kvmw95l0124tsl8zf98egj4wclxc)
 | 6 | External+Level1 | 395 | 15.4 | [link](https://ntnu.box.com/s/ru33adfwicobv0ugnpn4byigdfbjho55) -->
 
-External light has two levels E0 corresponding to 100 - 300 lux and E1 corresponding to 400-700 lux measured outside and above water surface.
+**Illumination Details:** External light has two levels E0 corresponding to 100 - 300 lux and E1 corresponding to 400-700 lux measured outside and above water surface. Onboard light varies between three incremental levels, O1, O2, and O3, corresponinding to 20%, 40%, 60% pwm level of the [Lumen Subsea LED](https://bluerobotics.com/store/thrusters/lights/lumen-r2-rp/) (Max: 1500 lumens) respectively.
 
 ### Trajectories with Varying Media (Air, Water)
 The second subset contains 6 trajectories with varying media (Air, Water).
