@@ -14,8 +14,8 @@ Additionally, we provide trajectories with varying media (Air, Water).
 
 
 
-### Varying illumination 6 levels
-E0+O1 | E0+O2 | E0+O3 | E1+O3 | E1+O2 | E1+O1
+### Varying illumination at 6 levels
+| |  |  | |  | |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 ![](media/traj1.gif)  |  ![](media/traj2.gif) |  ![](media/traj3.gif) |  ![](media/traj4.gif) |  ![](media/traj5.gif) |  ![](media/traj6.gif)
 
@@ -177,6 +177,21 @@ The cameras were calibrated using the [Kalibr](https://github.com/ethz-asl/kalib
 | cam0, cam1(Stereo Pair)| [link](https://ntnu.box.com/s/rwzq02hu1bfqxfy42bub543bxqyrq4sm) | [link](https://ntnu.box.com/s/2a8avom1h12wuzqbhonigqqa7rbe0g73) | [link](https://ntnu.box.com/s/whcuhsbetjoxgwsh4hw5lx14gqdnd7bl)
 | cam3| [link]() | [link](https://ntnu.box.com/s/2a8avom1h12wuzqbhonigqqa7rbe0g73) | [link](https://ntnu.box.com/s/whcuhsbetjoxgwsh4hw5lx14gqdnd7bl)
 | cam4| [link]() | [link](https://ntnu.box.com/s/2a8avom1h12wuzqbhonigqqa7rbe0g73) | [link](https://ntnu.box.com/s/whcuhsbetjoxgwsh4hw5lx14gqdnd7bl)
+
+## Reference
+If you use this work in your research, please cite the publications as follows:
+
+[An Online Self-calibrating Refractive Camera Model with Application to Underwater Odometry](https://arxiv.org/abs/2310.16658)
+```
+@misc{singh2023online,
+      title={An Online Self-calibrating Refractive Camera Model with Application to Underwater Odometry}, 
+      author={Mohit Singh and Mihir Dharmadhikari and Kostas Alexis},
+      year={2023},
+      eprint={2310.16658},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
+```
 
 ## Contact
 You can contact us for any question:
