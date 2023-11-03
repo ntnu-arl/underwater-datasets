@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="An Online Self-calibrating Refractive Camera Model with Application to Underwater Odometry.">
+  <meta name="keywords" content="Camera Model, Underwater, VIO">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Refractive Camera Model</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">An Online Self-calibrating Refractive Camera Model with Application to Underwater Odometry</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.ntnu.no/ansatte/mohit.singh">Mohit Singh</a>,</span>
+            <span class="author-block">
+              <a href="https://www.ntnu.no/ansatte/mihir.dharmadhikari">Mihir Dharmadhikari</a>,</span>
+            <span class="author-block">
+              <a href="https://www.ntnu.no/ansatte/konstantinos.alexis">Kostas Alexis</a>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">NTNU: Norges Teknisk-Naturvitenskapelige Universitet</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2310.16658"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2310.16658"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/embed/aT9F4gRjyJ0?si=kdm0OifNx_SPBAai"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/ntnu-arl/underwater-datasets"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span> -->
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/ntnu-arl/underwater-datasets"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Dataset</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This work presents a camera model for refractive media such as water and its application in underwater visual-inertial odometry. The model is self-calibrating in real-time and is free of known correspondences or calibration targets. It is separable as a distortion model (dependent on refractive index and radial pixel coordinate) and a virtual pinhole model (as a function of refractive index). We derive the self-calibration formulation leveraging epipolar constraints to estimate the refractive index and subsequently correct for distortion. Through experimental studies using an underwater robot integrating cameras and inertial sensing, the model is validated regarding the accurate estimation of the refractive index and its benefits for robust odometry estimation in an extended envelope of conditions. Lastly, we show the transition between media and the estimation of the varying refractive index online, thus allowing computer vision tasks across refractive media.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/aT9F4gRjyJ0?si=kdm0OifNx_SPBAai" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/combined_v13.png"
+      alt="Reuslts"/>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Figure</span> Detailed results of one of the trajectories in from the Trajectory Group 1 of the dataset<a href="https://github.com/ntnu-arl/underwater-datasets"></a>. The ambient lighting was set to the lowest level whereas the onboard lighting was at the highest level. Sub-figure (a) shows a qualitative comparison between the odometry solution estimated using the proposed \ac{rcm} and the baseline ROVIO solution. The locations of the tag-sets are shown each time that set is detected and the error in these locations is used to measure the quality of the odometry. This and the visible skewing of the path clearly show that odometry estimated using the proposed model is more accurate than the common approach of calibrating an otherwise conventional camera model directly underwater (which is also more laborious). Sub-figure (b) shows pixels in the input image the features from which were used to calculate the refractive index n colorized based on the error in the calculated n versus the true value for water (1.33). Finally, sub-figure (c) shows the estimated n over the duration of the mission.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{singh2023online,
+      title={An Online Self-calibrating Refractive Camera Model with Application to Underwater Odometry}, 
+      author={Mohit Singh and Mihir Dharmadhikari and Kostas Alexis},
+      year={2023},
+      eprint={2310.16658},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2310.16658">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/ntnu-arl/underwater-datasets" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The website template is borrowed from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
