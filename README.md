@@ -1,4 +1,4 @@
-# Multi Camera Underwater Visual Interial Dataset
+# Multi Camera Underwater Visual Inertial Dataset
 
 [![License: BSD-3](https://img.shields.io/badge/License-BSD3-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
