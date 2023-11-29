@@ -175,8 +175,8 @@ The cameras were calibrated using the [Kalibr](https://github.com/ethz-asl/kalib
 | Camera | Intrinsics (Air) | Intrinsics (Water) | Extrinsics | 
 | --- | --- | --- | --- |
 | cam0, cam1(Stereo Pair)| [link](https://ntnu.box.com/s/rwzq02hu1bfqxfy42bub543bxqyrq4sm) | [link](https://ntnu.box.com/s/2a8avom1h12wuzqbhonigqqa7rbe0g73) | [link](https://ntnu.box.com/s/whcuhsbetjoxgwsh4hw5lx14gqdnd7bl)
-| cam3| [link]() | [link](https://ntnu.box.com/s/2a8avom1h12wuzqbhonigqqa7rbe0g73) | [link](https://ntnu.box.com/s/whcuhsbetjoxgwsh4hw5lx14gqdnd7bl)
-| cam4| [link]() | [link](https://ntnu.box.com/s/2a8avom1h12wuzqbhonigqqa7rbe0g73) | [link](https://ntnu.box.com/s/whcuhsbetjoxgwsh4hw5lx14gqdnd7bl)
+| cam3| [link](https://ntnu.box.com/s/fudzuacwy6tzeh94n2qvxi69w6ld62f3) | [link](https://ntnu.box.com/s/hih3fnhvsdkyhce90im1cfpwllb4vxj3) | [link](https://ntnu.box.com/s/ykilwh0q4qtgaolkctlob6klaqgx0ges)
+| cam4| [link](https://ntnu.box.com/s/mrqh25cw3acr7xgmnrgzdqwt5lekcw1t) | [link](https://ntnu.box.com/s/hjrcxpa7plnhh8mp0zx28ff5bxn191hj) | [link](https://ntnu.box.com/s/xpqmeamdc0ivbm0ano6ywz0vv1uqfgzy)
 
 ## Reference
 If you use this work in your research, please cite the publications as follows:
