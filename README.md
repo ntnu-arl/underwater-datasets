@@ -12,7 +12,7 @@ consisting of multiple onboard sensors, mainly, 5 Camera and IMU ( [Alphasense C
 Additionally, we provide trajectories with varying media (Air, Water).
 
 ## Updates / News
-* **Apr  7 2024:** Added 6 trajectrories (2 lighing conditions x 3 motion patterns) with peicewise-continuous ground-truth from motion capture. Link: [Subset 3](https://github.com/ntnu-arl/underwater-datasets/edit/main/README.md#subset-3-trajectories-with-ground-truth-from-motion-capture)
+* **Apr  7 2024:** Added 6 trajectrories (2 lighing conditions x 3 motion patterns) with peicewise-continuous ground-truth from motion capture. Link: [Subset 3](https://github.com/ntnu-arl/underwater-datasets/tree/main?tab=readme-ov-file#subset-3-trajectories-with-ground-truth-from-motion-capture)
 * **Nov 29 2023:** Uploaded undertwater dataset with multi-camera imu system for underwater VIO and camera models. Link: [Subset 1](https://github.com/ntnu-arl/underwater-datasets/tree/main?tab=readme-ov-file#subset-1-motion-patterns) and [Subset 2](https://github.com/ntnu-arl/underwater-datasets/tree/main?tab=readme-ov-file#subset-2-trajectories-with-varying-media-air-water)
 
 
