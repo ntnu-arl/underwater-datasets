@@ -1,4 +1,4 @@
-# Multi Camera Underwater Visual Interial Dataset
+# Multi Camera Underwater Visual Inertial Dataset
 
 [![License: BSD-3](https://img.shields.io/badge/License-BSD3-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
@@ -11,7 +11,9 @@ consisting of multiple onboard sensors, mainly, 5 Camera and IMU ( [Alphasense C
 
 Additionally, we provide trajectories with varying media (Air, Water).
 
-
+## Updates / News
+* **Apr  7 2024:** Added 6 trajectrories (2 lighing conditions x 3 motion patterns) with peicewise-continuous ground-truth from motion capture. Link: [Subset 3](https://github.com/ntnu-arl/underwater-datasets/tree/main?tab=readme-ov-file#subset-3-trajectories-with-ground-truth-from-motion-capture)
+* **Nov 29 2023:** Uploaded undertwater dataset with multi-camera imu system for underwater VIO and camera models. Link: [Subset 1](https://github.com/ntnu-arl/underwater-datasets/tree/main?tab=readme-ov-file#subset-1-motion-patterns) and [Subset 2](https://github.com/ntnu-arl/underwater-datasets/tree/main?tab=readme-ov-file#subset-2-trajectories-with-varying-media-air-water)
 
 
 ### Varying illumination at 6 levels
@@ -134,26 +136,6 @@ _____________
 | 23 | E0+O2| 279 | 10.9| [link](https://ntnu.box.com/s/cyeh04s1zgwpvkywfsy9nmkv6hx3u245)
 | 24 | E0+O1| 263 | 10.2| [link](https://ntnu.box.com/s/swl2wplywlkrjjy6xm57o2uhfmsnmgry)
 
-<!-- #### Motion Pattern 3 (Strched Hour Glass)
-| Trajectory | Illumination | Duration (s) | Size (Gb) | Link | 
-| --- | --- | --- | --- | --- |
-| 13 | E1+O3 | 460 | 18.1| [link](https://ntnu.box.com/s/ho8sz412taqe94ehhbmw1icgamh3anu1)
-| 14 | E1+O2 | 456 | 17.8| [link](https://ntnu.box.com/s/jbxqb5d9ao9trlsuixciaoer48g8mddh)
-| 15 | E1+O1 | 392 | 15.3| [link](https://ntnu.box.com/s/hs9che0xplz1zaqk9vt2xxzi4ux070mz)
-| 16 | E0+O1 | 386 | 15.1| [link](https://ntnu.box.com/s/w5948mujkpxq32k3oly5ktuh5oa393up)
-| 17 | E0+O2 | 443 | 17.3| [link](https://ntnu.box.com/s/txkgl98rngbm3twv2ifl8lm0ogzoc7mo)
-| 18 | E0+O3 | 395 | 15.4| [link](https://ntnu.box.com/s/ksrjxwbn3iadx0secif8ywgbyphud9a1) -->
-
-<!-- #### Motion Pattern 2 (Strched Hour Glass with Transverse Motion)
-| Trajectory | Illumination | Duration (s) | Size (Gb) | Link | 
-| --- | --- | --- | --- | --- |
-| 1 | External+Level1 | 460  | 18.1| [link](https://ntnu.box.com/s/nnktnmgshz3e1v6whs6iabfpfubh1j0r)
-| 2 | External+Level1 | 456 | 17.8| [link](https://ntnu.box.com/s/150bajeprv0f8jvtk3zwaia3wskpf0u8)
-| 3 | External+Level1 | 392 | 15.3| [link](https://ntnu.box.com/s/yldexh6sw50z8oqigy8hrll43kwx754k)
-| 4 | External+Level1 | 386 | 15.1| [link](https://ntnu.box.com/s/k7cf5wm2xudpeaecr9xyf6ii40l70dzq)
-| 5 | External+Level1 | 443 | 17.3| [link](https://ntnu.box.com/s/7a05kvmw95l0124tsl8zf98egj4wclxc)
-| 6 | External+Level1 | 395 | 15.4 | [link](https://ntnu.box.com/s/ru33adfwicobv0ugnpn4byigdfbjho55) -->
-
 **Illumination Details:** External light has two levels E0 corresponding to 100 - 300 lux and E1 corresponding to 400-700 lux measured outside and above water surface. Onboard light varies between three incremental levels, O1, O2, and O3, corresponinding to 20%, 40%, 60% pwm level of the [Lumen Subsea LED](https://bluerobotics.com/store/thrusters/lights/lumen-r2-rp/) (Max: 1500 lumens) respectively.
 
 ### Subset 2: Trajectories with Varying Media (Air, Water)
@@ -175,8 +157,21 @@ The cameras were calibrated using the [Kalibr](https://github.com/ethz-asl/kalib
 | Camera | Intrinsics (Air) | Intrinsics (Water) | Extrinsics | 
 | --- | --- | --- | --- |
 | cam0, cam1(Stereo Pair)| [link](https://ntnu.box.com/s/rwzq02hu1bfqxfy42bub543bxqyrq4sm) | [link](https://ntnu.box.com/s/2a8avom1h12wuzqbhonigqqa7rbe0g73) | [link](https://ntnu.box.com/s/whcuhsbetjoxgwsh4hw5lx14gqdnd7bl)
-| cam3| [link]() | [link](https://ntnu.box.com/s/2a8avom1h12wuzqbhonigqqa7rbe0g73) | [link](https://ntnu.box.com/s/whcuhsbetjoxgwsh4hw5lx14gqdnd7bl)
-| cam4| [link]() | [link](https://ntnu.box.com/s/2a8avom1h12wuzqbhonigqqa7rbe0g73) | [link](https://ntnu.box.com/s/whcuhsbetjoxgwsh4hw5lx14gqdnd7bl)
+| cam3| [link](https://ntnu.box.com/s/fudzuacwy6tzeh94n2qvxi69w6ld62f3) | [link](https://ntnu.box.com/s/hih3fnhvsdkyhce90im1cfpwllb4vxj3) | [link](https://ntnu.box.com/s/ykilwh0q4qtgaolkctlob6klaqgx0ges)
+| cam4| [link](https://ntnu.box.com/s/mrqh25cw3acr7xgmnrgzdqwt5lekcw1t) | [link](https://ntnu.box.com/s/hjrcxpa7plnhh8mp0zx28ff5bxn191hj) | [link](https://ntnu.box.com/s/xpqmeamdc0ivbm0ano6ywz0vv1uqfgzy)
+
+### Subset 3: Trajectories with Ground-truth from Motion Capture
+![](media/WithFullPoleLabelled.png) 
+![](media/DatasetwithGT.gif)
+
+| No. | Illumination | Duration (s) | Size (Gb) | Motion Pattern | Link | 
+| --- | --- | --- | --- | --- | --- |
+| 1 | E1+O1| 370 |  14.5| Rectangular | [link](https://ntnu.box.com/s/8tpgvtqlrhol8rts929x9h3rbo57mat6)
+| 2 | E1+O1| 374 |  14.7| Infinity/Figure "8" | [link](https://ntnu.box.com/s/8fx6gyah6yfg4k7hj59yl2gwk712qq0q)
+| 3 | E1+O1| 318 | 12.5| Dumbbell | [link](https://ntnu.box.com/s/qdcuxce9oxze85peipo89a2rz1wwuh03)
+| 4 | E0+O1| 405 | 15.9| Rectangular | [link](https://ntnu.box.com/s/szyn2w0dp4qnil6p0k1o4h3f4o7zt3vx)
+| 5 | E0+O1| 401 | 15.7| Infinity/Figure "8" | [link](https://ntnu.box.com/s/uv37rnewohgzv724i495zphcrmdjr4j0)
+| 6 | E0+O1| 302 | 11.6| Dumbbell | [link](https://ntnu.box.com/s/ya0v9f6zzfbs84v976d8v5ruq0lcrbf5)
 
 ## Reference
 If you use this work in your research, please cite the publications as follows:
