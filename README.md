@@ -12,6 +12,7 @@ consisting of multiple onboard sensors, mainly, 5 Camera and IMU ( [Alphasense C
 Additionally, we provide trajectories with varying media (Air, Water).
 
 ## Updates / News
+* **May 27 2024:** Added Mocap files for subset-3 in (.tum) format with artifacts removed. 
 * **Apr  7 2024:** Added 6 trajectrories (2 lighing conditions x 3 motion patterns) with peicewise-continuous ground-truth from motion capture. Link: [Subset 3](https://github.com/ntnu-arl/underwater-datasets/tree/main?tab=readme-ov-file#subset-3-trajectories-with-ground-truth-from-motion-capture)
 * **Nov 29 2023:** Uploaded undertwater dataset with multi-camera imu system for underwater VIO and camera models. Link: [Subset 1](https://github.com/ntnu-arl/underwater-datasets/tree/main?tab=readme-ov-file#subset-1-motion-patterns) and [Subset 2](https://github.com/ntnu-arl/underwater-datasets/tree/main?tab=readme-ov-file#subset-2-trajectories-with-varying-media-air-water)
 
@@ -164,14 +165,14 @@ The cameras were calibrated using the [Kalibr](https://github.com/ethz-asl/kalib
 ![](media/WithFullPoleLabelled.png) 
 ![](media/DatasetwithGT.gif)
 
-| No. | Illumination | Duration (s) | Size (Gb) | Motion Pattern | Link | 
-| --- | --- | --- | --- | --- | --- |
-| 1 | E1+O1| 370 |  14.5| Rectangular | [link](https://ntnu.box.com/s/8tpgvtqlrhol8rts929x9h3rbo57mat6)
-| 2 | E1+O1| 374 |  14.7| Infinity/Figure "8" | [link](https://ntnu.box.com/s/8fx6gyah6yfg4k7hj59yl2gwk712qq0q)
-| 3 | E1+O1| 318 | 12.5| Dumbbell | [link](https://ntnu.box.com/s/qdcuxce9oxze85peipo89a2rz1wwuh03)
-| 4 | E0+O1| 405 | 15.9| Rectangular | [link](https://ntnu.box.com/s/szyn2w0dp4qnil6p0k1o4h3f4o7zt3vx)
-| 5 | E0+O1| 401 | 15.7| Infinity/Figure "8" | [link](https://ntnu.box.com/s/uv37rnewohgzv724i495zphcrmdjr4j0)
-| 6 | E0+O1| 302 | 11.6| Dumbbell | [link](https://ntnu.box.com/s/ya0v9f6zzfbs84v976d8v5ruq0lcrbf5)
+| No. | Illumination | Duration (s) | Size (Gb) | Motion Pattern | Link | MoCap Ground-Truth (.tum) |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | E1+O1| 370 |  14.5| Rectangular | [link](https://ntnu.box.com/s/8tpgvtqlrhol8rts929x9h3rbo57mat6) | [link](https://ntnu.box.com/s/1os6cn7pso6oezheuywimcdze2gdz1g6)
+| 2 | E1+O1| 374 |  14.7| Infinity/Figure "8" | [link](https://ntnu.box.com/s/8fx6gyah6yfg4k7hj59yl2gwk712qq0q)  | [link](https://ntnu.box.com/s/7rh4du2g2e5rwzo04mn21n5t06cmzhun)
+| 3 | E1+O1| 318 | 12.5| Dumbbell | [link](https://ntnu.box.com/s/qdcuxce9oxze85peipo89a2rz1wwuh03)  | [link](https://ntnu.box.com/s/tv1j25lai9salrl48w1fd8c4b6a3ya58)
+| 4 | E0+O1| 405 | 15.9| Rectangular | [link](https://ntnu.box.com/s/szyn2w0dp4qnil6p0k1o4h3f4o7zt3vx)  | [link](https://ntnu.box.com/s/1jhhsda98q0ln2aznpujpqtjmhv0ojgx)
+| 5 | E0+O1| 401 | 15.7| Infinity/Figure "8" | [link](https://ntnu.box.com/s/uv37rnewohgzv724i495zphcrmdjr4j0)  | [link](https://ntnu.box.com/s/7snz79rdp2pagaqf2eryp0zs9c2q495o)
+| 6 | E0+O1| 302 | 11.6| Dumbbell | [link](https://ntnu.box.com/s/ya0v9f6zzfbs84v976d8v5ruq0lcrbf5)  | [link](https://ntnu.box.com/s/ycbyp2etzmo3a96idbvulut2pkwllnet)
 
 ## Reference
 If you use this work in your research, please cite the publications as follows:
