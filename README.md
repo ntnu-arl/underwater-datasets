@@ -2,6 +2,8 @@
 
 [![License: BSD-3](https://img.shields.io/badge/License-BSD3-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
+> **Data moved to Hugging Face (October 2026).** NTNU Box has been discontinued, so all download links below now point to [huggingface.co/datasets/ntnu-arl/underwater-datasets](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/tree/main/mclab-2023-multicam). Each trajectory is now a single merged `.bag`, verified message-by-message against the original split recordings. The [dataset page on Hugging Face](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/blob/main/mclab-2023-multicam/README.md) has the full documentation with measured durations and sizes.
+
 ## About
 This is an underwater dataset
 consisting of multiple onboard sensors, mainly, 5 Camera and IMU ( [Alphasense Core Research Developent Kit](https://github.com/sevensense-robotics/core_research_manual)),a Pressure Sensor, and actuator commands from an ROV piloted in an indoor facility ([MC-lab](https://www.ntnu.edu/imt/lab/cybernetics)). A total of 24 trajectories are collected with following characteristics:
@@ -12,6 +14,7 @@ consisting of multiple onboard sensors, mainly, 5 Camera and IMU ( [Alphasense C
 Additionally, we provide trajectories with varying media (Air, Water).
 
 ## Updates / News
+* **Oct 17 2026:** NTNU Box links replaced by Hugging Face links. All data, calibration and MoCap ground truth is now hosted at [huggingface.co/datasets/ntnu-arl/underwater-datasets](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/tree/main/mclab-2023-multicam).
 * **May 27 2024:** Added Mocap files for subset-3 in (.tum) format with artifacts removed. 
 * **Apr  7 2024:** Added 6 trajectrories (2 lighing conditions x 3 motion patterns) with peicewise-continuous ground-truth from motion capture. Link: [Subset 3](https://github.com/ntnu-arl/underwater-datasets/tree/main?tab=readme-ov-file#subset-3-trajectories-with-ground-truth-from-motion-capture)
 * **Nov 29 2023:** Uploaded undertwater dataset with multi-camera imu system for underwater VIO and camera models. Link: [Subset 1](https://github.com/ntnu-arl/underwater-datasets/tree/main?tab=readme-ov-file#subset-1-motion-patterns) and [Subset 2](https://github.com/ntnu-arl/underwater-datasets/tree/main?tab=readme-ov-file#subset-2-trajectories-with-varying-media-air-water)
@@ -75,7 +78,7 @@ Each of the trajectory contains following data in ROS bag format:
 /mavros/rc/out # ch 1-8 thrusters, ch 9-10 for Lumen LED
 ```
 
-The collective data can be found [(1-18)](https://ntnu.box.com/s/xgsepbu96ty8ylzcz7sjyg6vvo3hciwe) and [(19-24)](https://ntnu.box.com/s/nrelktzxg6a2pa5p3kp0nnuyd0rpkicj), whereas the following table contains link to each trajectory:
+The collective data can be found [(1-18)](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/tree/main/mclab-2023-multicam/subset-1-motion-patterns) and [(19-24)](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/tree/main/mclab-2023-multicam/subset-1-motion-patterns), whereas the following table contains link to each trajectory:
 
 ### Motion Pattern 1 (Rectangular)
 | Shape | Distance Travelled (m) | Mean Linear Velocity (m/s) | Mean Angular Velocity (rad/s) |
@@ -85,12 +88,12 @@ ___________
 
 | No. | Illumination | Duration (s) | Size (Gb) | Link |
 | --- | --- | --- | --- | --- |
-| 1 | E0+O1 | 460  | 18.1| [link](https://ntnu.box.com/s/nnktnmgshz3e1v6whs6iabfpfubh1j0r)
-| 2 | E0+O2 | 456 | 17.8| [link](https://ntnu.box.com/s/150bajeprv0f8jvtk3zwaia3wskpf0u8)
-| 3 | E0+O3 | 392 | 15.3| [link](https://ntnu.box.com/s/yldexh6sw50z8oqigy8hrll43kwx754k)
-| 4 | E1+O3 | 386 | 15.1| [link](https://ntnu.box.com/s/k7cf5wm2xudpeaecr9xyf6ii40l70dzq)
-| 5 | E1+O2 | 443 | 17.3| [link](https://ntnu.box.com/s/7a05kvmw95l0124tsl8zf98egj4wclxc)
-| 6 | E1+O1 | 395 | 15.4 | [link](https://ntnu.box.com/s/ru33adfwicobv0ugnpn4byigdfbjho55)
+| 1 | E0+O1 | 460  | 18.1| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_01/traj_01.bag)
+| 2 | E0+O2 | 456 | 17.8| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_02/traj_02.bag)
+| 3 | E0+O3 | 392 | 15.3| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_03/traj_03.bag)
+| 4 | E1+O3 | 386 | 15.1| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_04/traj_04.bag)
+| 5 | E1+O2 | 443 | 17.3| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_05/traj_05.bag)
+| 6 | E1+O1 | 395 | 15.4 | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_06/traj_06.bag)
 
 ### Motion Pattern 2 (Infinity)
 | Shape | Distance Travelled (m) | Mean Linear Velocity (m/s) | Mean Angular Velocity (rad/s) |
@@ -100,12 +103,12 @@ _____________
 
 | No. | Illumination | Duration (s) | Size (Gb) | Link | 
 | --- | --- | --- | --- | --- |
-| 7 | E1+O1 | 251  | 9.8| [link](https://ntnu.box.com/s/2me1s6o4uqzfz3ai804t4sbwvmnzye91)
-| 8 | E1+O2 | 252 | 9.8| [link](https://ntnu.box.com/s/2njbkv6mgqzlrxw2vr1k9qkedggd5sdh)
-| 9 | E1+O3 | 262 | 10.2| [link](https://ntnu.box.com/s/3vofmpx83jn10jby7om44reapjbculme)
-| 10 | E0+O3 | 281 | 11.0| [link](https://ntnu.box.com/s/ow0yjer634yb6y2vibi0f6im6lr3hb2b)
-| 11 | E0+O2 | 279 | 10.9| [link](https://ntnu.box.com/s/2nu1q2t6i402j0vt6r9p1280071w0rtb)
-| 12 | E0+O1 | 263 | 10.2 | [link](https://ntnu.box.com/s/ybxfvueawqagv20huehqj08gtpxsprwk)
+| 7 | E1+O1 | 251  | 9.8| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_07/traj_07.bag)
+| 8 | E1+O2 | 252 | 9.8| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_08/traj_08.bag)
+| 9 | E1+O3 | 262 | 10.2| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_09/traj_09.bag)
+| 10 | E0+O3 | 281 | 11.0| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_10/traj_10.bag)
+| 11 | E0+O2 | 279 | 10.9| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_11/traj_11.bag)
+| 12 | E0+O1 | 263 | 10.2 | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_12/traj_12.bag)
 
 ### Motion Pattern 2 (Dumbbell)
 | Shape | Distance Travelled (m) | Mean Linear Velocity (m/s) | Mean Angular Velocity (rad/s) |
@@ -115,12 +118,12 @@ _____________
 
 | No. | Illumination | Duration (s) | Size (Gb) | Link | 
 | --- | --- | --- | --- | --- |
-| 13 | E0+O1| 251 |  9.8| [link](https://ntnu.box.com/s/ho8sz412taqe94ehhbmw1icgamh3anu1)
-| 14 | E0+O2| 252 |  9.8| [link](https://ntnu.box.com/s/jbxqb5d9ao9trlsuixciaoer48g8mddh)
-| 15 | E0+O3| 262 | 10.2| [link](https://ntnu.box.com/s/hs9che0xplz1zaqk9vt2xxzi4ux070mz)
-| 16 | E1+O3| 281 | 11.0| [link](https://ntnu.box.com/s/w5948mujkpxq32k3oly5ktuh5oa393up)
-| 17 | E1+O2| 279 | 10.9| [link](https://ntnu.box.com/s/txkgl98rngbm3twv2ifl8lm0ogzoc7mo)
-| 18 | E1+O1| 263 | 10.2| [link](https://ntnu.box.com/s/ksrjxwbn3iadx0secif8ywgbyphud9a1)
+| 13 | E0+O1| 242 |  9.8| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_13/traj_13.bag)
+| 14 | E0+O2| 271 |  9.8| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_14/traj_14.bag)
+| 15 | E0+O3| 138 | 10.2| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_15/traj_15.bag)
+| 16 | E1+O3| 318 | 11.0| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_16/traj_16.bag)
+| 17 | E1+O2| 294 | 10.9| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_17/traj_17.bag)
+| 18 | E1+O1| 290 | 10.2| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_18/traj_18.bag)
 
 ### Motion Pattern 2 (Dumbbell w/ Transverse Motion)
 | Shape | Distance Travelled (m) | Mean Linear Velocity (m/s) | Mean Angular Velocity (rad/s) |
@@ -130,12 +133,12 @@ _____________
 
 | No. | Illumination | Duration (s) | Size (Gb) | Link | 
 | --- | --- | --- | --- | --- |
-| 19 | E1+O1| 251 |  9.8| [link](https://ntnu.box.com/s/1qzl70sitoihlmy2f1lold7by4t3wyp1)
-| 20 | E1+O2| 252 |  9.8| [link](https://ntnu.box.com/s/msywm8yd8pm52xsy5ho6j7e8dweuonzo)
-| 21 | E1+O3| 262 | 10.2| [link](https://ntnu.box.com/s/7jvmazzutn7t319q4b1kd99oosts41h2)
-| 22 | E0+O3| 281 | 11.0| [link](https://ntnu.box.com/s/md92htqqe9qvpio5280u6tuqsritar80)
-| 23 | E0+O2| 279 | 10.9| [link](https://ntnu.box.com/s/cyeh04s1zgwpvkywfsy9nmkv6hx3u245)
-| 24 | E0+O1| 263 | 10.2| [link](https://ntnu.box.com/s/swl2wplywlkrjjy6xm57o2uhfmsnmgry)
+| 19 | E1+O1| 362 |  9.8| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_19/traj_19.bag)
+| 20 | E1+O2| 316 |  9.8| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_20/traj_20.bag)
+| 21 | E1+O3| 365 | 10.2| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_21/traj_21.bag)
+| 22 | E0+O3| 409 | 11.0| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_22/traj_22.bag)
+| 23 | E0+O2| 415 | 10.9| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_23/traj_23.bag)
+| 24 | E0+O1| 485 | 10.2| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-1-motion-patterns/traj_24/traj_24.bag)
 
 **Illumination Details:** External light has two levels E0 corresponding to 100 - 300 lux and E1 corresponding to 400-700 lux measured outside and above water surface. Onboard light varies between three incremental levels, O1, O2, and O3, corresponinding to 20%, 40%, 60% pwm level of the [Lumen Subsea LED](https://bluerobotics.com/store/thrusters/lights/lumen-r2-rp/) (Max: 1500 lumens) respectively.
 
@@ -148,8 +151,8 @@ The second subset contains 6 trajectories with varying media (Air, Water).
 
 | Trajectory | Duration | Size | Link | 
 | --- | --- | --- | --- |
-| 1 |  173  | 2.6| [link](https://ntnu.box.com/s/iwx42iv4hunvc74zy2s3du6g7nhe1ja4)
-| 2 |  126 | 1.9| [link](https://ntnu.box.com/s/57c4pxgxms20ok4l6hvoxbrvfdlj26h1)
+| 1 |  173  | 2.6| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-2-varying-media/traj_01/traj_01.bag)
+| 2 |  126 | 1.9| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-2-varying-media/traj_02/traj_02.bag)
 
 ## Camera IMU Calibration 
 
@@ -157,9 +160,9 @@ The cameras were calibrated using the [Kalibr](https://github.com/ethz-asl/kalib
 
 | Camera | Intrinsics (Air) | Intrinsics (Water) | Extrinsics | 
 | --- | --- | --- | --- |
-| cam0, cam1(Stereo Pair)| [link](https://ntnu.box.com/s/rwzq02hu1bfqxfy42bub543bxqyrq4sm) | [link](https://ntnu.box.com/s/2a8avom1h12wuzqbhonigqqa7rbe0g73) | [link](https://ntnu.box.com/s/whcuhsbetjoxgwsh4hw5lx14gqdnd7bl)
-| cam3| [link](https://ntnu.box.com/s/fudzuacwy6tzeh94n2qvxi69w6ld62f3) | [link](https://ntnu.box.com/s/hih3fnhvsdkyhce90im1cfpwllb4vxj3) | [link](https://ntnu.box.com/s/ykilwh0q4qtgaolkctlob6klaqgx0ges)
-| cam4| [link](https://ntnu.box.com/s/mrqh25cw3acr7xgmnrgzdqwt5lekcw1t) | [link](https://ntnu.box.com/s/hjrcxpa7plnhh8mp0zx28ff5bxn191hj) | [link](https://ntnu.box.com/s/xpqmeamdc0ivbm0ano6ywz0vv1uqfgzy)
+| cam0, cam1(Stereo Pair)| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/tree/main/mclab-2023-multicam/calibration/stereo_intrinsics_above_water) | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/tree/main/mclab-2023-multicam/calibration/stereo_intrinsics_under_water) | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/tree/main/mclab-2023-multicam/calibration/stereo_extrinsics_above_water)
+| cam3| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/tree/main/mclab-2023-multicam/calibration/side_right_intrinsics_above_water) | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/tree/main/mclab-2023-multicam/calibration/side_right_intrinsics_underwater) | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/tree/main/mclab-2023-multicam/calibration/side_right_extrinsics_above_water)
+| cam4| [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/tree/main/mclab-2023-multicam/calibration/side_left_intrinsics_above_water) | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/tree/main/mclab-2023-multicam/calibration/side_left_intrinsics_under_water) | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/tree/main/mclab-2023-multicam/calibration/side_left_extrisics_above_water)
 
 ### Subset 3: Trajectories with Ground-truth from Motion Capture
 ![](media/WithFullPoleLabelled.png) 
@@ -167,12 +170,12 @@ The cameras were calibrated using the [Kalibr](https://github.com/ethz-asl/kalib
 
 | No. | Illumination | Duration (s) | Size (Gb) | Motion Pattern | Link | MoCap Ground-Truth (.tum) |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | E1+O1| 370 |  14.5| Rectangular | [link](https://ntnu.box.com/s/8tpgvtqlrhol8rts929x9h3rbo57mat6) | [link](https://ntnu.box.com/s/1os6cn7pso6oezheuywimcdze2gdz1g6)
-| 2 | E1+O1| 374 |  14.7| Infinity/Figure "8" | [link](https://ntnu.box.com/s/8fx6gyah6yfg4k7hj59yl2gwk712qq0q)  | [link](https://ntnu.box.com/s/7rh4du2g2e5rwzo04mn21n5t06cmzhun)
-| 3 | E1+O1| 318 | 12.5| Dumbbell | [link](https://ntnu.box.com/s/qdcuxce9oxze85peipo89a2rz1wwuh03)  | [link](https://ntnu.box.com/s/tv1j25lai9salrl48w1fd8c4b6a3ya58)
-| 4 | E0+O1| 405 | 15.9| Rectangular | [link](https://ntnu.box.com/s/szyn2w0dp4qnil6p0k1o4h3f4o7zt3vx)  | [link](https://ntnu.box.com/s/1jhhsda98q0ln2aznpujpqtjmhv0ojgx)
-| 5 | E0+O1| 401 | 15.7| Infinity/Figure "8" | [link](https://ntnu.box.com/s/uv37rnewohgzv724i495zphcrmdjr4j0)  | [link](https://ntnu.box.com/s/7snz79rdp2pagaqf2eryp0zs9c2q495o)
-| 6 | E0+O1| 302 | 11.6| Dumbbell | [link](https://ntnu.box.com/s/ya0v9f6zzfbs84v976d8v5ruq0lcrbf5)  | [link](https://ntnu.box.com/s/ycbyp2etzmo3a96idbvulut2pkwllnet)
+| 1 | E1+O1| 370 |  14.5| Rectangular | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-3-mocap-gt/traj_01/traj_01.bag) | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-3-mocap-gt/traj_01/traj_01_mocap.tum)
+| 2 | E1+O1| 374 |  14.7| Infinity/Figure "8" | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-3-mocap-gt/traj_02/traj_02.bag)  | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-3-mocap-gt/traj_02/traj_02_mocap.tum)
+| 3 | E1+O1| 318 | 12.5| Dumbbell | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-3-mocap-gt/traj_03/traj_03.bag)  | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-3-mocap-gt/traj_03/traj_03_mocap.tum)
+| 4 | E0+O1| 405 | 15.9| Rectangular | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-3-mocap-gt/traj_04/traj_04.bag)  | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-3-mocap-gt/traj_04/traj_04_mocap.tum)
+| 5 | E0+O1| 401 | 15.7| Infinity/Figure "8" | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-3-mocap-gt/traj_05/traj_05.bag)  | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-3-mocap-gt/traj_05/traj_05_mocap.tum)
+| 6 | E0+O1| 302 | 11.6| Dumbbell | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-3-mocap-gt/traj_06/traj_06.bag)  | [link](https://huggingface.co/datasets/ntnu-arl/underwater-datasets/resolve/main/mclab-2023-multicam/subset-3-mocap-gt/traj_06/traj_06_mocap.tum)
 
 ## Reference
 If you use this work in your research, please cite the publications as follows:
